@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/aboutUs_css.css">
+    <link rel="shortcut icon" type="image\png" href="../images/Harlink3.png"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+</head>
+<body>
+    <!-- nav bar start  -->
+    <header>
+        <img src="images/banner.jpg" class="banner" alt="">
+        <a href="../index.html" class="logo" ><img src="../images/Harlink2.png" alt=""></a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- nav bar end  -->
+
+    <!-- side nav start -->
+    <div id="sideNav" >
+        <nav class="nav0">
+            <ul class="ul">
+                <li class="list0"><a class="list-link" href="../index.html">Home</a></li>
+                <li class="list0"><a class="list-link" href="aboutUs.html">About Us</a></li>
+                <li class="list0"><a class="list-link" href="services.html">Services</a></li>
+                <li class="list0"><a class="list-link" href="team.html">Team</a></li>
+                <li class="list0"><a class="list-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <div id="manuBtn">
+            <img src="../images/menu.png" alt="manu" id="menu" >
+        </div>
+    </div>
+    <!--java script for side nav start-->
+    <script type="text/javascript">
+    var manuBtn = document.getElementById("manuBtn") 
+    var sideNav = document.getElementById("sideNav") 
+    var manu = document.getElementById("menu") 
+
+    sideNav.style.right = "-100%";
+    
+
+    manuBtn.onclick=function(){
+        if( sideNav.style.right == "-100%" ){
+                sideNav.style.right = "0";
+                manu.src = "../images/close.png"
+                
+       }
+       else{
+                sideNav.style.right = "-100%";
+                manu.src = "../images/menu.png";
+       }
+    }
+
+    </script>
+    <!--java script for side nav end-->
+    
+    <!-- side nav end -->
+
+    <!--Scrol to top button start -->
+    <button id="btnscrolltotop">
+        <i class="fas fa-arrow-circle-up"></i>
+    </button>
+
+    <script>
+        const btnScrollToTop = document.querySelector("#btnscrolltotop");
+
+        btnScrollToTop.addEventListener("click", function(){
+            //window.scrollTo(0,0);
+
+            // window.scrollTo({
+            //     top:0,
+            //     left:0,
+            //     behavior:smooth,
+            // });
+
+            $("html, body").animate({scrollTop: 0}, "slow");
+        });
+    </script>
+<!--Scroll to top button end -->
+
+    <!--head start-->
+    <section>
+    <div class="head">
+        <div class="t-text">
+            <h1>Ab<b>O</b>ut <b>U</b>S</h1> 
+        </div>
+
+        <div class="short-link">
+            <a href="../index.html">Home</a> <span>/</span> <a class="act-link" href="#">About Us</a>
+        </div>
+    </section>
+
+    
+    <!--head end-->
+
+    <!-- about us start -->
+
+    <div class="title-text">
+        <h1>  Read  About  </h1>
+        <p> <b>H</b>arlink <b>I</b>nvestment </p>
+    </div>
+    <section id="aboutUs">
+
+        <div class="company">
+            <div class="img_cont">
+                <img class="truckimg " src="../images/bg5.jpg" alt="">
+            </div>
+            <div class="ourcompany">
+                <h1>The C<b>o</b>mpany:</h1>
+                <p>
+                    HARLINK INVESTMENT Ltd (HIL) was conceived and structured in line with global maritime regulations as a local international logistics company. The desire of the founding partner was to nurture a wholly family company into a multinational player in the global logistics value chain. Harlink is prepared to compete and partner with foreign companies that are desirous to do business in Nigeria's maritime space. The company was registered with the Federal government and has increased the share capital from 1M to 20M fully paid. This enables Harlink to be registered with federal regulatory agencies in the marine and oil & gas sectors of the economy.</p> 
+                <h3> Servi<b>c</b>e (what we do)</h3>
+                <ul>
+                    <li>Freight Forwarding services</li>
+                    <li>Clearing services</li>
+                    <li>Shipping services</li>
+                    <li>Warehousing services</li>
+                    <li>Import -Export Advisory services</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="vision-mission">
+            <div class="vision">
+                <h1>V<b>i</b>sion</h1>
+                <ol>
+                    <li>Systems</li>
+                    <li>Creativity</li>
+                    <li>Innovation Excellence</li>
+                </ol>
+            </div>
+            
+            <div class="mission">
+                <h1>Missi<b>o</b>n</h1>
+                <p>Achieve longevity by building strong relationships with their employees and clients.</p>
+                
+            </div>
+        </div>
+
+        <div class="licenses">
+            <img src="../images/bg-14.jpg" alt="card">
+            <div class="licenses-info">
+                <h1>LI<b>C</b>ENSES AND PERM<b>I</b>TS</h1>
+                <p>HIL is licensed to do business with the following federal government agencies:</p>
+                <ul>
+                    <li>The Nigerian ports.</li>
+                    <li>The Nigerian customs Service.</li>
+                    <li>The Department of petroleum (DPR).</li>
+                    <li>Certified by DUNS International rating administration.</li>
+                    <li>The Nigerian maritime administration and safety Agency.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="history">
+            <h1>E<b>X</b>PERIENCE PROFILE/ J<b>O</b>B HISTORY</h1>
+            <ul>
+                <li>Processing of Temporary importation and delivery of Mv Lewek Toucan -DSV DP-II Vessel for Tilone Subsea Ltd and Hallin Marine UK Limited for an Offshore Inspection Maintenance Repair Services for TOTAL Deepwater Sites. As at 15th October’2011 _Ref: NCS/APP/1.81 of 21/11/11</li>
+
+                <li>Temporary Importation extension approval on Bond for Mv Lewek Toucan – DSV DP-II Vessel for Tilone Subsea Limited and Hallin Marine UK Ltd for an Offshore Inspection Maintenance Repair Services for TOTAL Deepwater Sites as at October 2012_ Ref: NCS/T&T/I&E/045/S.787</li>
+
+                <li>Delivery of Two (2) units of equipment QXP 20 & 21 WROV systems on Temporary Importation Ref: HQTRS NO: 208/2011 of 13/10/2011 dated 15th October, 2011 for Tilone Subsea Ltd and Hallin Marine UK Limited for an Offshore Inspection Maintenance Repair Services for TOTAL Deepwater Sites. Ref: NCS/T&T/I&E/045/S.787 as at October 2012</li>
+            </ul>
+        </div>
+        
+    </section>
+    <!-- About us end -->
+
+    <!--fotter start-->
+    <body class="body0">
+        <footer>
+            <div class="container0">
+                <div class="sec aboutus ">
+                    <h2>M<b>o</b>tto</h2>
+                    <p> 
+                        Harlink Investment Ltd is a business that uses proven and empirical innovation in several areas to bring about change in value chain.
+                    </p>
+
+                    <div class="logo-pic"><img src="../images/Harlink2.png" alt=""></div>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quickLinks ">
+                    <h2>Q<b>u</b>ick link<b>s</b></h2>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li><br>
+                        <li><a href="aboutUs.html">About Us</a></li><br>
+                        <li><a href="services.html">Services</a></li><br>
+                        <li><a href="team.html">Team</a></li><br>
+                        <li><a href="contact.html">Contact</a></li><br>
+                    </ul>
+                </div>
+
+                <div class="sec contact0 ">
+                    <h2>C<b>o</b>ntact I<b>n</b>fo</h2>
+                    <ul class="info0" >
+                        <li>
+                            <span><i class="fa fa-marker"></i></span>
+                            <span>34 Rhodes Cres,<br>
+                            Apapa Quays 102272,<br>Lagos, Nigeria. </span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="tel:08033047379">08033047379</a><br>
+                                <a href="tel:08167202457">08167202457</a></p>
+                                
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="mailto:harlinkinvest@gmail.com">harlinkinvest@gmail.com</a>
+                            <br> <a href="mailto:inofiu@gmail.com">inofiu@gmail.com</a> </p>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            
+        </footer>
+        <div class="copyrightText">
+            <p>copyright &copy;2021 firelight. designed by <span> <b>Inaolaji Basit</b></p>
+        </div>
+    </body>
+    <!--footer start-->
+</body>

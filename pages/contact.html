@@ -1,0 +1,285 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contact_css.css">
+    <link rel="shortcut icon" type="image\png" href="../images/Harlink3.png"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+</head>
+<body>
+    <!-- nav bar start  -->
+    <header>
+        <img src="images/banner.jpg" class="banner" alt="">
+        <a href="../index.html" class="logo" ><img src="../images/Harlink2.png" alt=""></a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- nav bar end  -->
+
+    <!-- side nav start -->
+    <div id="sideNav" >
+        <nav class="nav0">
+            <ul class="ul">
+                <li class="list0"><a class="list-link" href="../index.html">Home</a></li>
+                <li class="list0"><a class="list-link" href="aboutUs.html">About Us</a></li>
+                <li class="list0"><a class="list-link" href="services.html">Services</a></li>
+                <li class="list0"><a class="list-link" href="team.html">Team</a></li>
+                <li class="list0"><a class="list-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <div id="manuBtn">
+            <img src="../images/menu.png" alt="manu" id="menu" >
+        </div>
+    </div>
+    <!--java script for side nav start-->
+    <script type="text/javascript">
+    var manuBtn = document.getElementById("manuBtn") 
+    var sideNav = document.getElementById("sideNav") 
+    var manu = document.getElementById("menu") 
+
+    sideNav.style.right = "-100%";
+    
+
+    manuBtn.onclick=function(){
+        if( sideNav.style.right == "-100%" ){
+                sideNav.style.right = "0";
+                manu.src = "../images/close.png"
+                
+       }
+       else{
+                sideNav.style.right = "-100%";
+                manu.src = "../images/menu.png";
+       }
+    }
+
+    </script>
+    <!--java script for side nav end-->
+    
+    <!-- side nav end -->
+
+    <!--Scrol to top button start -->
+    <button id="btnscrolltotop">
+        <i class="fas fa-arrow-circle-up"></i>
+    </button>
+
+    <script>
+        const btnScrollToTop = document.querySelector("#btnscrolltotop");
+
+        btnScrollToTop.addEventListener("click", function(){
+            //window.scrollTo(0,0);
+
+            // window.scrollTo({
+            //     top:0,
+            //     left:0,
+            //     behavior:smooth,
+            // });
+
+            $("html, body").animate({scrollTop: 0}, "slow");
+        });
+    </script>
+<!--Scroll to top button end -->
+
+    <!--head start-->
+    <section>
+    <div class="head">
+        <div class="t-text">
+            <h1>C<b>o</b>ntact U<b>S</b></h1> <b></b>
+        </div>
+
+        <div class="short-link">
+            <a href="../index.html">Home</a> <span>/</span> <a class="act-link" href="#">Contact US</a>
+        </div>
+    </section>
+
+    
+    <!--head end-->
+
+    <!-- Our Team start -->
+
+    <div class="title-text">
+        <h1>Get in Touch</h1>
+        <p><b>W</b>ith <b>U</b>s</p>
+    </div>
+
+
+    <section id="cuPage">
+
+
+        <div class="Pbox-cont">
+            <div class="box3">
+                <div class="icon"><i class="far fa-clock"></i></div>
+                <div class="counter3">Opening-Hours</div>
+                <div class="text3">Monday - Friday <br> 9AM - 5PM</div>
+            </div>
+            <div class="box3">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="counter3">Address</div>
+                <div class="text3">34 Rhodes Cres, Apapa Quays 102272, Lagos.</div>
+            </div>
+            <div class="box3">
+                <div class="icon"><i class="far fa-envelope"></i></div>
+                <div class="counter3">Email</div>
+                <div class="text3">harlinkinvest@gmail.com <br> inofiu@gmai.com</div>
+            </div>
+        </div>
+
+        <div class="map">
+            <h1>O<b>u</b>r l<b>i</b>ve Locati<b>o</b>n</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.618214440035!2d3.369752014296743!3d6.443044125882077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bac4bc57549%3A0xb576cc1888d7c1e4!2sHarlink%20Investment!5e0!3m2!1sen!2sng!4v1638276729704!5m2!1sen!2sng" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="bg-cont">
+            <div class="container">
+                <h1 style="color: #fff;">Connect With Us.</h1>
+                <p style="color: #fff;">Get in touch with us and Start working with us. <br> Feel
+                    Harlink Investment Ltd. is the right place to be.
+                </p>
+        
+                <div class="contact-box">
+                    <div class="contact-left">
+                        <h3>Send your request</h3>
+                        <form id="my-form" action="https://formspree.io/f/xpzbjlan" method="POST" >
+        
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text" name="name" placeholder="Paul Winner">
+                                </div>
+        
+                                <div class="input-group">
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" placeholder="07023439445">
+                                </div>
+                            </div>
+        
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="PaulWinner@gmail.com">
+                                </div>
+        
+                                <div class="input-group">
+                                    <label>Subject</label>
+                                    <input type="text" name="subject" placeholder="Content">
+                                </div>
+                            </div>
+        
+                            <label>Message</label>
+                            <textarea rows="5" name="message" placeholder="Your Message" ></textarea>
+        
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-right">
+                        <h3>Reach us</h3>
+        
+                        <table>
+                            <tr>
+                                <td>Email</td>
+                                <td id="mail">harlinkinvest@gmail.com <br> inofiu@gmai.com</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Contact</td>
+                                <td><a href=" tel:08033047379">08033047379</a> <br> <a href="tel:08167202457">08167202457</a>  </td>
+                            </tr>
+        
+                            <tr>
+                                <td>Address</td>
+                                <td>12/13 Isheri-Olofin<br>
+                                    Lagos,<br>
+                                    Nigeria.
+        
+                                    
+        
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Our Team end -->
+
+    <!--fotter start-->
+    <body class="body0">
+        <footer>
+            <div class="container0">
+                <div class="sec aboutus ">
+                    <h2>M<b>o</b>tto</h2>
+                    <p> 
+                        Harlink Investment Ltd is a business that uses proven and empirical innovation in several areas to bring about change in value chain.
+                    </p>
+
+                    <div class="logo-pic"><img src="../images/Harlink2.png" alt=""></div>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quickLinks ">
+                    <h2>Q<b>u</b>ick li<b>n</b>ks</h2>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li><br>
+                        <li><a href="aboutUs.html">About Us</a></li><br>
+                        <li><a href="services.html">Services</a></li><br>
+                        <li><a href="team.html">Team</a></li><br>
+                        <li><a href="contact.html">Contact</a></li><br>
+                    </ul>
+                </div>
+
+                <div class="sec contact0 ">
+                    <h2>Co<b>n</b>tact I<b>n</b>fo</h2>
+                    <ul class="info0" >
+                        <li>
+                            <span><i class="fa fa-marker"></i></span>
+                            <span>34 Rhodes Cres,<br>
+                            Apapa Quays 102272,<br>Lagos, Nigeria. </span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="tel:08033047379">08033047379</a><br>
+                                <a href="tel:08167202457">08167202457</a></p>
+                                
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="mailto:harlinkinvest@gmail.com">harlinkinvest@gmail.com</a>
+                            <br> <a href="mailto:inofiu@gmail.com">inofiu@gmail.com</a> </p>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            
+        </footer>
+        <div class="copyrightText">
+            <p>copyright &copy;2021 firelight. designed by <span> <b>Inaolaji Basit</b> </p>
+        </div>
+    </body>
+    <!--footer start-->
+</body>

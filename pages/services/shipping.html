@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping</title>
+    <link rel="stylesheet" href="../../css/servicesEach.css">
+    <link rel="shortcut icon" type="image\png" href="../../images/Harlink3.png"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+</head>
+<body>
+    <!-- nav bar start  -->
+    <header>
+        <img src="images/banner.jpg" class="banner" alt="">
+        <a href="../../index.html" class="logo" ><img src="../../images/Harlink2.png" alt=""></a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../aboutUs.html">About Us</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../team.html">Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- nav bar end  -->
+
+    <!-- side nav start -->
+    <div id="sideNav" >
+        <nav class="nav0">
+            <ul class="ul">
+                <li class="list0"><a class="list-link" href="../../index.html">Home</a></li>
+                <li class="list0"><a class="list-link" href="../aboutUs.html">About Us</a></li>
+                <li class="list0"><a class="list-link" href="../services.html">Services</a></li>
+                <li class="list0"><a class="list-link" href="../team.html">Team</a></li>
+                <li class="list0"><a class="list-link" href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <div id="manuBtn">
+            <img src="../../images/menu.png" alt="manu" id="menu" >
+        </div>
+    </div>
+    <!--java script for side nav start-->
+    <script type="text/javascript">
+    var manuBtn = document.getElementById("manuBtn") 
+    var sideNav = document.getElementById("sideNav") 
+    var manu = document.getElementById("menu") 
+
+    sideNav.style.right = "-100%";
+    
+
+    manuBtn.onclick=function(){
+        if( sideNav.style.right == "-100%" ){
+                sideNav.style.right = "0";
+                manu.src = "../../images/close.png"
+                
+       }
+       else{
+                sideNav.style.right = "-100%";
+                manu.src = "../../images/menu.png";
+       }
+    }
+
+    </script>
+    <!--java script for side nav end-->
+    
+    <!-- side nav end -->
+
+    <!--Scrol to top button start -->
+    <button id="btnscrolltotop">
+        <i class="fas fa-arrow-circle-up"></i>
+    </button>
+
+    <script>
+        const btnScrollToTop = document.querySelector("#btnscrolltotop");
+
+        btnScrollToTop.addEventListener("click", function(){
+            //window.scrollTo(0,0);
+
+            // window.scrollTo({
+            //     top:0,
+            //     left:0,
+            //     behavior:smooth,
+            // });
+
+            $("html, body").animate({scrollTop: 0}, "slow");
+        });
+    </script>
+<!--Scroll to top button end -->
+
+    <!--head start-->
+    <section>
+    <div class="head">
+        <div class="t-text">
+            <h1>Shipping</h1> 
+        </div>
+
+        <div class="short-link">
+            <a href="../services.html">Services</a> <span>/</span> <a class="act-link" href="#">Shipping</a>
+        </div>
+    </section>
+
+    
+    <!--head end-->
+
+    <!-- Our Team start -->
+
+    <div class="title-text">
+        <h1>We Offer Services Like</h1>
+        <p>Shipping</p>
+    </div>
+    <section id="whatwedo">
+
+        
+        <div class="service-cont">
+            <div class="service-info">
+                <img src="../../images/bg-20.jpg" alt="">
+
+                <div class="service-text">
+                    <h1>Shipping</h1>
+                    <p>Harlink Investment Ltd (HIL) vessel chartering represents a joint venture in connection to the transport business. HIL is a world leader in ship brokerage and advisory services. We own representation with over 80,000 vessels of all types, DWT tonnage, and magnitude. Focusing on General Cargo, Multipurpose, and Bulk ships, they also provide agents to owners and charterers at all times during the year. Our goal is to be transparent when placing your interests first while dealing with you directly. Our headquarters are located in Limassol, Cyprus; however we serve agents worldwide of every size.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Our Team end -->
+
+    <!--fotter start-->
+    <body class="body0">
+        <footer>
+            <div class="container0">
+                <div class="sec aboutus ">
+                    <h2>Motto</h2>
+                    <p> 
+                        Harlink Investment Ltd is a business that uses proven and empirical innovation in several areas to bring about change in value chain.
+                    </p>
+
+                    <div class="logo-pic"><img src="../../images/Harlink2.png" alt=""></div>
+                    <ul class="sci">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="sec quickLinks ">
+                    <h2>Quick links</h2>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li><br>
+                        <li><a href="../aboutUs.html">About Us</a></li><br>
+                        <li><a href="../services.html">Services</a></li><br>
+                        <li><a href="../team.html">Team</a></li><br>
+                        <li><a href="../contact.html">Contact</a></li><br>
+                    </ul>
+                </div>
+
+                <div class="sec contact0 ">
+                    <h2>Contact Info</h2>
+                    <ul class="info0" >
+                        <li>
+                            <span><i class="fa fa-marker"></i></span>
+                            <span>34 Rhodes Cres,<br>
+                            Apapa Quays 102272,<br>Lagos, Nigeria. </span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="tel:08033047379">08033047379</a><br>
+                                <a href="tel:08167202457">08167202457</a></p>
+                                
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="mailto:harlinkinvest@gmail.com">harlinkinvest@gmail.com</a>
+                            <br> <a href="mailto:inofiu@gmail.com">inofiu@gmail.com</a> </p>
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            
+        </footer>
+        <div class="copyrightText">
+            <p>copyright &copy;2021 firelight. designed by <span> <b>Inaolaji Basit</b></p>
+        </div>
+    </body>
+    <!--footer start-->
+</body>
